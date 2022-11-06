@@ -1,0 +1,106 @@
+[
+  {
+    "Name": "Sun",
+    "mass": "1.989e30 Kg",
+    "Diameter": "1.3927e6 Km",
+    "Volume": "1.409e18 Km3",
+    "Age": "4.603 billion years"
+  },
+
+  {
+    "Name": "Mercury",
+    "mass": "3.285e23 Kg",
+    "Distance From Sun": 0.4,
+    "Length Of Year": "88 Earth Days",
+    "Moons": 0,
+    "Diameter": "4879.4 Km",
+    "Volume": "6.083e10 Km3",
+    "Planet type": "Terrestrial"
+  },
+
+  {
+    "Name": "Venus",
+    "mass": "4.8673e24 Kg",
+    "Distance From Sun": 0.7,
+    "Length Of Year": "225 Earth Days",
+    "Moons": 0,
+    "Diameter": "12100 Km",
+    "Volume": "9.28415e11 Km3",
+    "Planet type": "Terrestrial"
+  },
+
+  {
+    "Name": "Earth",
+    "mass": "5.972e24 Kg",
+    "Distance From Sun": 1,
+    "Length Of Year": "365.25 Earth Days",
+    "Moons": 1,
+    "Diameter": "12742 Km",
+    "Volume": "1.08321e12 Km3",
+    "Planet type": "Terrestrial"
+  },
+
+  {
+    "Name": "Moon",
+    "mass": "5.972e24 Kg",
+    "Distance From Sun": 1,
+    "Distance From Earth": 1,
+    "Diameter": "12742 Km",
+    "Volume": "1.08321e12 Km3"
+  },
+
+  {
+    "Name": "Mars",
+    "mass": "642e21 Kg",
+    "Distance From Sun": 1.52,
+    "Length Of Year": "687 Earth Days",
+    "Moons": 2,
+    "Diameter": "6779 Km",
+    "Volume": "1.6318e11 Km3",
+    "Planet type": "Terrestrial"
+  },
+
+  {
+    "Name": "Jupiter",
+    "mass": "1.8986e27 Kg",
+    "Distance From Sun": 5.2,
+    "Length Of Year": "4380 Earth Days",
+    "Moons": 80,
+    "Diameter": "139820 Km",
+    "Volume": "4.43128e15 Km3",
+    "Planet type": "Gas Giant"
+  },
+
+  {
+    "Name": "Saturn",
+    "mass": "586.46e24 Kg",
+    "Distance From Sun": 9.58,
+    "Length Of Year": "10585 Earth Days",
+    "Moons": 83,
+    "Diameter": "116460 Km",
+    "Volume": "8.2716e13 Km3",
+    "Planet type": "Gas Giant"
+  },
+
+  {
+    "Name": "Uranus",
+    "mass": "86.832e24 Kg",
+    "Distance From Sun": 19.2,
+    "Length Of Year": "30660 Earth Days",
+    "Moons": 27,
+    "Diameter": "50724 Km",
+    "Volume": "6.833e13 Km3",
+    "Planet type": "Gas Giant"
+  },
+
+  {
+    "Name": "Neptune",
+    "mass": "102.43e24 Kg",
+    "Distance From Sun": 30.05,
+    "Length Of Year": "60225 Earth Days",
+    "Moons": 14,
+    "Diameter": "49244 Km",
+    "Volume": "6.254e13 Km3",
+    "Planet type": "Gas Giant"
+  }
+]

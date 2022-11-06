@@ -1,0 +1,722 @@
+/* Structure
+-------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #02080d;
+  background-image: url("../IMG/fond.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-family: Calibri;
+  text-align: center;
+  width: 100vw;
+  height: 95vh;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: visible;
+}
+
+:root {
+  --wSun: calc(100px * var(--coef));
+  --wMercure: calc(150px * var(--coef));
+  --wVenus: calc(200px * var(--coef));
+  --wNeptune: calc(500px * var(--coef));
+  --wTerre: calc(250px * var(--coef));
+  --wLune: calc(20px * var(--coef));
+  --wMars: calc(300px * var(--coef));
+  --wCeinture: calc(350px * var(--coef));
+  --wJupiter: calc(350px * var(--coef));
+  --wSaturne: calc(400px * var(--coef));
+  --wUranus: calc(450px * var(--coef));
+
+  --planete_: calc(10px * var(--coef));
+}
+
+/* Smallest */
+@media (min-height: 0px) and (min-width: 0px) {
+  :root {
+    --coef: 0.3;
+  }
+  .planetsGrp {
+    height: 120vh;
+  }
+
+  .txt {
+    font-size: auto;
+  }
+}
+
+/* Small */
+@media (min-height: 320px) and (min-width: 320px) {
+  :root {
+    --coef: 0.6;
+  }
+  .planetsGrp {
+    height: 50vh;
+  }
+
+  #ceinture_asteroides {
+    background: url("../IMG/circle.png") top center;
+  }
+
+  #ceinture_asteroides1 {
+    background: url("../IMG/circle.png") bottom center;
+  }
+}
+
+/* Large */
+@media (min-height: 750px) and (min-width: 640px) {
+  :root {
+    --coef: 1;
+  }
+  .planetsGrp {
+    height: 65vh;
+  }
+
+  #ceinture_asteroides {
+    background: url("../IMG/circle2.png") top center;
+  }
+
+  #ceinture_asteroides1 {
+    background: url("../IMG/circle2.png") bottom center;
+  }
+}
+
+@font-face {
+  font-family: "CF Spaceship";
+  src: url("CFSpaceship-Regular.ttf") format("truetype");
+}
+
+/* Titre et Sous-Titres
+-------------------------------------------------------------- */
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: calc(80px * var(--coef));
+  line-height: 1;
+  color: #eee5a2;
+  text-transform: uppercase;
+  text-shadow: 5px 5px #32312b;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+header p {
+  width: calc(400px * var(--coef));
+  font-size: calc(18px * var(--coef));
+  color: #6a695f;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+header p.disclaimer {
+  font-size: calc(14px * var(--coef));
+  color: #666666;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* Système Solaire
+-------------------------------------------------------------- */
+
+.cadreGrp {
+  background-color: rgba(0, 128, 0, 0.171);
+  width: 100%;
+}
+.grpInfo {
+  background-color: rgba(255, 0, 0, 0.315);
+  width: 100%;
+  height: 100%;
+}
+
+.planetsGrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbite {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.thePlanet {
+  cursor: pointer;
+}
+
+.thePlanet:hover {
+  box-shadow: 0px 0px 25px 0px #ffe240;
+}
+/* Soleil
+-------------------------------------------------------------- */
+
+#soleil {
+  position: absolute;
+  height: var(--wSun);
+  width: var(--wSun);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #f1e767 0%, #fca728 100%);
+  box-shadow: 0px 0px 25px 0px #ffe240;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+/* Mercure
+-------------------------------------------------------------- */
+
+#mercure {
+  position: absolute;
+  width: var(--wMercure);
+  height: var(--wMercure);
+  z-index: 9;
+}
+
+#planete_mercure {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #bababa;
+  animation: orbite_mercure 2.8s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wMercure) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wMercure) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_mercure {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wMercure) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wMercure) / 2));
+  }
+}
+
+/* Venus
+-------------------------------------------------------------- */
+
+#venus {
+  position: absolute;
+  width: var(--wVenus);
+  height: var(--wVenus);
+  z-index: 8;
+}
+
+#planete_venus {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #c4966b;
+  animation: orbite_venus 7.2s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wVenus) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wVenus) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_venus {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wVenus) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wVenus) / 2));
+  }
+}
+
+/* Terre
+-------------------------------------------------------------- */
+
+#terre {
+  position: absolute;
+  width: var(--wTerre);
+  height: var(--wTerre);
+  z-index: 7;
+}
+
+#planete_terre {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #499dff;
+  animation: orbite_terre 12s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wTerre) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wTerre) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_terre {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wTerre) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wTerre) / 2));
+  }
+}
+
+/* Lune
+-------------------------------------------------------------- */
+
+#lune {
+  position: absolute;
+  width: var(--wLune);
+  height: var(--wLune);
+  margin-top: calc(-6px * var(--coef));
+  margin-left: calc(-6px * var(--coef));
+  z-index: 6;
+}
+
+#astre_lune {
+  position: absolute;
+  width: calc(5px * var(--coef));
+  height: calc(5px * var(--coef));
+  border-radius: 50%;
+  background-color: #c7c7c7;
+  animation: orbite_lune 1s linear infinite;
+  box-shadow: inset 0 calc(1px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wLune) / 2) - (2px * var(--coef)));
+  margin-left: calc((var(--wLune) / 2) - (2px * var(--coef)));
+}
+
+@keyframes orbite_lune {
+  from {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wLune) / 2));
+  }
+  to {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wLune) / 2));
+  }
+}
+
+/* Mars
+-------------------------------------------------------------- */
+
+#mars {
+  position: absolute;
+  width: var(--wMars);
+  height: var(--wMars);
+  z-index: 5;
+}
+
+#planete_mars {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #ff8341;
+  animation: orbite_mars 22.5s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wMars) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wMars) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_mars {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wMars) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wMars) / 2));
+  }
+}
+
+/* Asteroides
+-------------------------------------------------------------- */
+
+#ceinture_asteroides {
+  position: absolute;
+  width: var(--wCeinture);
+  height: var(--wCeinture);
+
+  animation: orbite_asteroides 80s linear infinite;
+}
+
+@keyframes orbite_asteroides {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+#ceinture_asteroides1 {
+  position: absolute;
+  width: var(--wCeinture);
+  height: var(--wCeinture);
+
+  opacity: 0;
+  transition: opacity 0.5s;
+  animation: orbite_asteroides 80s linear infinite;
+}
+
+#info_ceinture_asteroides:hover ~ .planetsGrp #ceinture_asteroides1 {
+  opacity: 1;
+}
+
+/* Jupiter
+-------------------------------------------------------------- */
+
+#jupiter {
+  position: absolute;
+  width: var(--wJupiter);
+  height: var(--wJupiter);
+  z-index: 4;
+}
+
+#planete_jupiter {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #e53b26;
+  animation: orbite_jupiter 142.3s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wJupiter) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wJupiter) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_jupiter {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wJupiter) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wJupiter) / 2));
+  }
+}
+
+/* Saturne
+-------------------------------------------------------------- */
+#saturne {
+  position: absolute;
+  width: var(--wSaturne);
+  height: var(--wSaturne);
+  z-index: 3;
+}
+
+#planete_saturne {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #eadb6c;
+  animation: orbite_saturne 353.5s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wSaturne) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wSaturne) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_saturne {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wSaturne) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wSaturne) / 2));
+  }
+}
+
+#anneau_saturne {
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: calc(8px * var(--coef));
+  background: none repeat scroll 0% 0% transparent;
+  border: calc(2.5px * var(--coef)) solid #5a4e34;
+  transform: skewY(50deg);
+  margin-top: calc(-1.3px * var(--coef));
+  margin-left: calc(-1.3px * var(--coef));
+}
+
+/* Uranus
+-------------------------------------------------------------- */
+
+#uranus {
+  position: absolute;
+  width: var(--wUranus);
+  height: var(--wUranus);
+  z-index: 2;
+}
+
+#planete_uranus {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #80e2ea;
+  animation: orbite_uranus 1008.2s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wUranus) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wUranus) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_uranus {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wUranus) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wUranus) / 2));
+  }
+}
+
+#anneau_uranus {
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: calc(8px * var(--coef));
+  background: none repeat scroll 0% 0% transparent;
+  border: calc(2.5px * var(--coef)) solid #868686;
+  transform: skewY(50deg);
+  margin-top: calc(-1.3px * var(--coef));
+  margin-left: calc(-1.3px * var(--coef));
+}
+
+/* Neptune
+-------------------------------------------------------------- */
+
+#neptune {
+  position: absolute;
+  width: var(--wNeptune);
+  height: var(--wNeptune);
+  z-index: 1;
+}
+
+#planete_neptune {
+  position: absolute;
+  width: var(--planete_);
+  height: var(--planete_);
+  border-radius: 50%;
+  background-color: #1038ba;
+  animation: orbite_neptune 1977.4s linear infinite;
+  box-shadow: inset 0 calc(3px * var(--coef)) calc(1px * var(--coef))
+    rgba(0, 0, 0, 0.4);
+  margin-top: calc((var(--wNeptune) / 2) - (5px * var(--coef)));
+  margin-left: calc((var(--wNeptune) / 2) - (5px * var(--coef)));
+}
+
+@keyframes orbite_neptune {
+  from {
+    transform: rotate(180deg) translateY(calc(-1 * var(--wNeptune) / 2));
+  }
+  to {
+    transform: rotate(-180deg) translateY(calc(-1 * var(--wNeptune) / 2));
+  }
+}
+
+/* Informations Planet
+-------------------------------------------------------------- */
+
+.planetButton {
+  display: inline-flex;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  cursor: pointer;
+  font-size: calc(20px * var(--coef));
+  color: #386077;
+  transition: 0.5s;
+  margin-bottom: 10px;
+
+  user-select: none;
+}
+
+.planetButton:hover {
+  color: rgb(238, 255, 0);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* ******************************************************* */
+/* ************ When I hover right Buttons *************** */
+/* ******************************************************* */
+
+/* Highlight orbite */
+#info_mercure:hover ~ .planetsGrp #mercure.orbite,
+#info_venus:hover ~ .planetsGrp #venus.orbite,
+#info_terre:hover ~ .planetsGrp #terre.orbite,
+#info_mars:hover ~ .planetsGrp #mars.orbite,
+#info_jupiter:hover ~ .planetsGrp #jupiter.orbite,
+#info_saturne:hover ~ .planetsGrp #saturne.orbite,
+#info_uranus:hover ~ .planetsGrp #uranus.orbite,
+#info_neptune:hover ~ .planetsGrp #neptune.orbite,
+#info_lune:hover ~ .planetsGrp #terre #planete_terre #lune.orbite {
+  border: 1px solid rgb(255, 226, 64);
+  transition: 0.5s;
+}
+
+/* Highlight Planet */
+#info_mercure:hover ~ .planetsGrp #mercure div,
+#info_venus:hover ~ .planetsGrp #venus div,
+#info_terre:hover ~ .planetsGrp #terre div,
+#info_mars:hover ~ .planetsGrp #mars div,
+#info_jupiter:hover ~ .planetsGrp #jupiter div,
+#info_saturne:hover ~ .planetsGrp #saturne div,
+#info_uranus:hover ~ .planetsGrp #uranus div,
+#info_neptune:hover ~ .planetsGrp #neptune div,
+#info_lune:hover ~ .planetsGrp #terre #planete_terre #lune div {
+  box-shadow: 0px 0px 25px 0px #ffe240;
+  transition: 0.5s;
+}
+
+#info_soleil:hover ~ .planetsGrp #soleil {
+  height: calc(110px * var(--coef));
+  width: calc(110px * var(--coef));
+  transition: 0.5s;
+}
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+/* Cadres Informations Planetes
+-------------------------------------------------------------- */
+
+/* Cadre Planet */
+#cadre_mercury,
+#cadre_venus,
+#cadre_earth,
+#cadre_mars,
+#cadre_jupiter,
+#cadre_saturn,
+#cadre_uranus,
+#cadre_neptune,
+#cadre_sun,
+#cadre_moon,
+#cadre_ceinture_asteroides {
+  position: absolute;
+  max-width: 350px;
+  width: 70%;
+
+  max-height: 90vw;
+  overflow-y: auto;
+
+  /* padding: 10px; */
+  background-color: #07192491;
+  border: 1px solid #24485d;
+  border-radius: 5px;
+  color: #3a5d72;
+  font-size: 15px;
+  text-align: justify;
+  margin-left: -360px;
+  transition: all 0.4s;
+  z-index: 10;
+
+  opacity: 0;
+}
+
+.boxDict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.boxDict input[type="text"] {
+  font-size: 13px;
+  width: 80%;
+  height: 30px;
+  margin: 10px;
+
+  border: none;
+  border-bottom: white 2px solid;
+  background-color: #020c15;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.boxDict label {
+  color: azure;
+  margin-top: 11px;
+  margin-bottom: -5px;
+  font-size: 13px;
+}
+
+/* Info PlanÃ¨te */
+#info_mercure:hover ~ #cadre_mercury,
+#info_venus:hover ~ #cadre_venus,
+#info_terre:hover ~ #cadre_earth,
+#info_mars:hover ~ #cadre_mars,
+#info_jupiter:hover ~ #cadre_jupiter,
+#info_saturne:hover ~ #cadre_saturn,
+#info_uranus:hover ~ #cadre_uranus,
+#info_neptune:hover ~ #cadre_neptune,
+/* Info Astre */
+#info_soleil:hover ~ #cadre_sun,
+#info_lune:hover ~ #cadre_moon,
+#info_ceinture_asteroides:hover ~ #cadre_ceinture_asteroides {
+  opacity: 1;
+  margin-left: +0px;
+  transition: all 0.4s;
+}
+
+/* ************************ footer ************************** */
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  z-index: -10;
+}
+footer .Copyright {
+  color: #eee5a2;
+  font-size: calc(13px * var(--coef));
+}
+
+/* ******* */
+a.about,
+a.twitter {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background: #32312b;
+  padding: 7px 28px;
+  text-decoration: none;
+  color: #eee5a2;
+  font-size: 12px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  a.about,
+  a.twitter {
+    visibility: hidden;
+  }
+}
+/* ************************ Fin footer ************************** */
+
+/* ********************************************************************************** */
+
+#myObj {
+  /* width: 1385px; */
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+}
+
+canvas {
+  background: #8f1010 !important;
+  margin: auto;
+
+  width: 200px;
+  height: 200px;
+}

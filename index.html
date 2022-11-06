@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="SeatechIrisGrp2" />
+    <meta name="revised" content="06-11-2022" />
+    <meta name="copyright" content="Copyright (c) 2022 ayoub198fillali" />
+    <meta
+      name="description"
+      content="Application Present The Planets Of Our Galaxy"
+    />
+
+    <title>Solar System</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/normalize.min.css" />
+  </head>
+
+  <body id="thisBody">
+    <!-- -------------------------------------------------------------------- -->
+    <!-- ----------------------------bigTitle-------------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+
+    <section>
+      <header class="clearfix">
+        <h1>Our Solar System</h1>
+        <p>
+          Our project to present the planets of our Solar System, Have a good
+          trip!
+        </p>
+        <p class="disclaimer">
+          Created by FILLALI Ayoub, Hamza Himmich, Fatima Bouyess, AbdErahmen
+          Eouiche.
+        </p>
+      </header>
+    </section>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!-- ---------------------------planetButton----------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- SOLEIL -->
+    <div id="info_soleil" class="planetButton">Sun</div>
+    <!-- MERCURE -->
+    <div id="info_mercure" class="planetButton">Mercury</div>
+    <!-- VENUS -->
+    <div id="info_venus" class="planetButton">Venus</div>
+    <!-- TERRE -->
+    <div id="info_terre" class="planetButton">Earth</div>
+    <!-- LUNE -->
+    <div id="info_lune" class="planetButton">Moon</div>
+    <!-- MARS -->
+    <div id="info_mars" class="planetButton">Mars</div>
+    <!-- Ceinture d'astéroïdes -->
+    <div id="info_ceinture_asteroides" class="planetButton">Asteroid Belt</div>
+    <!-- JUPITER -->
+    <div id="info_jupiter" class="planetButton">Jupiter</div>
+    <!-- SATURNE -->
+    <div id="info_saturne" class="planetButton">Saturn</div>
+    <!-- URANUS -->
+    <div id="info_uranus" class="planetButton">Uranus</div>
+    <!-- NEPTUNE -->
+    <div id="info_neptune" class="planetButton">Neptune</div>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!-- ------------------------------Cadre--------------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- SOLEIL -->
+    <div id="cadre_sun"></div>
+    <!-- MERCURE -->
+    <div id="cadre_mercury"></div>
+    <!-- VENUS -->
+    <div id="cadre_venus"></div>
+    <!-- TERRE -->
+    <div id="cadre_earth"></div>
+    <!-- LUNE -->
+    <div id="cadre_moon"></div>
+    <!-- MARS -->
+    <div id="cadre_mars"></div>
+    <!-- JUPITER -->
+    <div id="cadre_jupiter"></div>
+    <!-- SATURNE -->
+    <div id="cadre_saturn"></div>
+    <!-- URANUS -->
+    <div id="cadre_uranus"></div>
+    <!-- NEPTUNE -->
+    <div id="cadre_neptune"></div>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!-- -----------------------------planetsGrp----------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- Positionnement des astres du système solaire  -->
+    <div class="planetsGrp">
+      <div id="soleil" class="thePlanet"></div>
+
+      <div id="mercure" class="orbite">
+        <div id="planete_mercure" class="thePlanet"></div>
+      </div>
+
+      <div id="venus" class="orbite">
+        <div id="planete_venus" class="thePlanet"></div>
+      </div>
+
+      <div id="terre" class="orbite">
+        <div id="planete_terre" class="thePlanet">
+          <div id="lune" class="orbite">
+            <div id="astre_lune" class="thePlanet"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mars" class="orbite">
+        <div id="planete_mars" class="thePlanet"></div>
+      </div>
+
+      <div id="ceinture_asteroides"></div>
+      <div id="ceinture_asteroides1"></div>
+
+      <div id="jupiter" class="orbite">
+        <div id="planete_jupiter" class="thePlanet"></div>
+      </div>
+
+      <div id="saturne" class="orbite">
+        <div id="planete_saturne">
+          <div id="anneau_saturne" class="thePlanet"></div>
+        </div>
+      </div>
+
+      <div id="uranus" class="orbite">
+        <div id="planete_uranus">
+          <div id="anneau_uranus" class="thePlanet"></div>
+        </div>
+      </div>
+
+      <div id="neptune" class="orbite">
+        <div id="planete_neptune" class="thePlanet"></div>
+      </div>
+
+      <!-- -------------------------------------------------------------------- -->
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!-- ----------------------------footer---------------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <a class="about" href="">About this experiment →</a
+    ><a class="twitter" href="">On Twitter →</a>
+    <div style="height: 10px"></div>
+    <footer>
+      <div class="Copyright">Copyright ©️ 2022 A²HF</div>
+    </footer>
+
+    <!-- ------------------------------JS------------------------------------ -->
+    <!-- -------------------------------------------------------------------- -->
+    <script src="JS/Jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
