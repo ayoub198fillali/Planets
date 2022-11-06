@@ -106,7 +106,7 @@ header h1 {
   margin-bottom: 10px;
 }
 header p {
-  width: calc(400px * var(--coef));
+  width: calc(515px * var(--coef));
   font-size: calc(18px * var(--coef));
   color: #6a695f;
   letter-spacing: 2px;
@@ -114,6 +114,7 @@ header p {
   margin-bottom: 10px;
 }
 header p.disclaimer {
+  width: calc(400px * var(--coef)) !important;
   font-size: calc(14px * var(--coef));
   color: #666666;
   text-align: justify;

@@ -102,16 +102,11 @@ async function fetchData() {
     );
 
     let jsData = await myData.json();
-    console.log(jsData);
 
     for (const element of jsData) {
-      console.log("_____________");
-      console.log(".cadre_" + element.Name.toLowerCase());
-
       myStrCode = `<div class="boxDict">`;
       for (let key in element) {
-        console.log(key + "  =>   " + element[key]);
-
+        // console.log(key + "  =>   " + element[key]);
         myStrCode += ` <label for="${
           element.Name.toLowerCase() + "_" + key
         }">${key}</label>
