@@ -96,7 +96,10 @@ function changeBodyTo(name) {
 async function fetchData() {
   console.log("Start Fetch");
   try {
-    let myData = await fetch("../JSON/Planet.json");
+    // let myData = await fetch("../JSON/Planet.json");
+    let myData = await fetch(
+      "https://raw.githubusercontent.com/ayoub198fillali/Planets/master/JSON/Planet.json"
+    );
 
     let jsData = await myData.json();
     console.log(jsData);
