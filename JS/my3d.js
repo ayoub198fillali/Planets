@@ -40,11 +40,9 @@ export function init(nameFile) {
   light = new THREE.PointLight(0xc4c4c4, 2);
   light.position.set(0, 300, 500);
   scene.add(light);
-  /* 
-   CMT light2 = new THREE.PointLight(0xc4c4c4, 2);
-   CMT light2.position.set(500, 100, 0);
-   CMT scene.add(light2);
-  */
+  light2 = new THREE.PointLight(0xc4c4c4, 2);
+  light2.position.set(500, 100, 0);
+  scene.add(light2);
   light3 = new THREE.PointLight(0xc4c4c4, 2);
   light3.position.set(0, 100, -500);
   scene.add(light3);
