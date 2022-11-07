@@ -1,3 +1,5 @@
+let server = true;
+//
 let scene, camera, renderer;
 let hlight, directionalLight, light, light2, light3, light4, controls, Planet;
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js";
@@ -60,14 +62,23 @@ export function init(nameFile) {
 
   $(".planetsGrp :not([id = myPanet3d])").hide();
   $("#myPanet3d").remove();
-  changeMp3(`../MP3/${nameFile}.mp3`);
+  if (server)
+    changeMp3(
+      `https://github.com/ayoub198fillali/Planets/blob/master/MP3/${nameFile}.mp3`
+    );
+  else changeMp3(`../MP3/${nameFile}.mp3`);
+
   renderer.domElement.id = "myPanet3d";
   $(".planetsGrp")[0].appendChild(renderer.domElement);
 
   controls = new OrbitControls(camera, renderer.domElement);
 
   let loader = new GLTFLoader();
-  loader.load(`../3D/${nameFile}.glb`, function (gltf) {
+  let cc;
+  if (server)
+    cc = `https://github.com/ayoub198fillali/Planets/blob/master/3D/${nameFile}.glb`;
+  else cc = `../3D/${nameFile}.glb`;
+  loader.load(cc, function (gltf) {
     console.log("Start2");
 
     Planet = gltf.scene.children[0];
