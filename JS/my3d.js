@@ -76,7 +76,7 @@ export function init(nameFile) {
   let loader = new GLTFLoader();
   let cc;
   if (server)
-    cc = `https://github.com/ayoub198fillali/Planets/blob/master/3D/${nameFile}.glb?raw=true`;
+    cc = `https://raw.githubusercontent.com/ayoub198fillali/Planets/master/3D/${nameFile}.glb`;
   else cc = `../3D/${nameFile}.glb`;
   loader.load(cc, function (gltf) {
     console.log("Start2");

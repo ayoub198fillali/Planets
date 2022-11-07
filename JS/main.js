@@ -29,11 +29,13 @@ $(".planetButton").on("click", function () {
   }
 });
 
-import { changeMp3 } from "./my3d.js";
+import { init, changeMp3 } from "./my3d.js";
 $("#backButton").on("click", function () {
   $("#myPanet3d").remove();
   $(".planetsGrp :not([id = myPanet3d])").show();
-  changeMp3("../MP3/intro.mp3");
+  changeMp3(
+    `https://github.com/ayoub198fillali/Planets/blob/master/MP3/intro.mp3?raw=true`
+  );
 });
 
 /////////////////////////////////////////////////////////
@@ -78,7 +80,6 @@ fetchData();
 /////////////////////////////////////////////////////////
 
 // Import My 3D
-import { init } from "./my3d.js";
 
 // GOTO Planet
 function changeBodyTo(name) {
