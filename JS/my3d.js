@@ -1,13 +1,15 @@
-let server = true;
+let server = false;
 //
 let scene, camera, renderer;
 let hlight, directionalLight, light, light2, light3, light4, controls, Planet;
+let loader, cc;
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js";
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js";
 
 export function init(nameFile) {
   console.log("start");
+  loader = new GLTFLoader();
 
   // Canvas -----------
   scene = new THREE.Scene();
@@ -73,9 +75,10 @@ export function init(nameFile) {
 
   controls = new OrbitControls(camera, renderer.domElement);
 
-  let loader = new GLTFLoader();
-  let cc;
+  reloadPlanet(nameFile);
+}
 
+export function reloadPlanet(nameFile) {
   if (server)
     cc = `https://raw.githubusercontent.com/ayoub198fillali/Planets/master/3D/${nameFile}.glb`;
   else cc = `../3D/${nameFile}.glb`;
@@ -83,12 +86,14 @@ export function init(nameFile) {
     console.log("Start2");
 
     Planet = gltf.scene.children[0];
-    Planet.scale.set(2, 2, 2);
+    // Planet.scale.set(2, 2, 2);
+    scene.remove(scene.children[5]);
     scene.add(gltf.scene);
     animate();
-    console.log("done2");
+    // console.log("done2 with " + scene.children.length);
+    // console.log(scene.children);
   });
-  console.log("done");
+  // console.log("done with " + scene.children.length);
 }
 
 function animate() {

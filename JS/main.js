@@ -29,7 +29,7 @@ $(".planetButton").on("click", function () {
   }
 });
 
-import { init, changeMp3 } from "./my3d.js";
+import { init, reloadPlanet, changeMp3 } from "./my3d.js";
 $("#backButton").on("click", function () {
   $("#myPanet3d").remove();
   $(".planetsGrp :not([id = myPanet3d])").show();
@@ -84,5 +84,6 @@ fetchData();
 // GOTO Planet
 function changeBodyTo(name) {
   console.log(`3D => ${name}`);
-  init(name);
+  if ($("#myPanet3d").length == 0) init(name);
+  else reloadPlanet(name);
 }
