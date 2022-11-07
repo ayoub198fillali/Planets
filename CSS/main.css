@@ -613,13 +613,11 @@ header p.disclaimer {
 #cadre_uranus,
 #cadre_neptune,
 #cadre_sun,
-#cadre_moon,
-#cadre_ceinture_asteroides {
+#cadre_moon {
   position: absolute;
   max-width: 350px;
   width: 70%;
-
-  max-height: 90vw;
+  max-height: calc(500px * var(--coef));
   overflow-y: auto;
 
   /* padding: 10px; */
@@ -634,6 +632,20 @@ header p.disclaimer {
   z-index: 10;
 
   opacity: 0;
+}
+#cadre_mercury:hover,
+#cadre_venus:hover,
+#cadre_earth:hover,
+#cadre_mars:hover,
+#cadre_jupiter:hover,
+#cadre_saturn:hover,
+#cadre_uranus:hover,
+#cadre_neptune:hover,
+#cadre_sun:hover,
+#cadre_moon:hover {
+  opacity: 1;
+  margin-left: +0px;
+  transition: all 0.4s;
 }
 
 .boxDict {
