@@ -102,7 +102,7 @@ header h1 {
   color: #eee5a2;
   text-transform: uppercase;
   text-shadow: 5px 5px #32312b;
-  margin-top: 15px;
+  margin-top: 7px;
   margin-bottom: 10px;
 }
 header p {
@@ -119,6 +119,27 @@ header p.disclaimer {
   color: #666666;
   text-align: justify;
   text-align-last: center;
+}
+/* -------------------------------------------------------------- */
+#backButton {
+  width: calc(40px * var(--coef));
+  height: calc(40px * var(--coef));
+  border-radius: 50%;
+  background-color: #eee5a2;
+  margin-top: 15px;
+  right: calc(20px * var(--coef));
+  top: 0;
+  position: fixed;
+  cursor: pointer;
+}
+#backButton::after {
+  content: "\02190";
+  font-weight: bolder;
+  color: #02080d;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 /* Système Solaire
@@ -138,6 +159,7 @@ header p.disclaimer {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 330px;
 }
 
 .orbite {
@@ -707,17 +729,53 @@ a.twitter {
 /* ********************************************************************************** */
 
 #myObj {
-  /* width: 1385px; */
+  width: 80%;
   display: flex;
   overflow: hidden;
   margin: auto;
   justify-content: center;
+  position: relative;
 }
 
 canvas {
-  background: #8f1010 !important;
-  margin: auto;
+  /* background: #8f1010 !important; */
+  border: #eee5a29c 1px solid;
+  border-radius: 15px;
+  box-sizing: border-box;
+  z-index: 9;
+  /* margin-top: 90px; */
+}
 
-  width: 200px;
-  height: 200px;
+/* #myObj::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+
+  transform: translate(-50%, -50%);
+  background: linear-gradient(#00e5ff, #b400fb);
+  animation: animateBack 5s linear infinite;
+}
+
+@keyframes animateBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#myObj::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: #040718;
+  border-radius: 15px;
+} */
+
+/* /////////////////////////////////////////////////////////// */
+#myControlerSound {
+  margin-top: 15px;
+  height: 40px;
 }
