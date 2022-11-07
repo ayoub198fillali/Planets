@@ -64,7 +64,7 @@ export function init(nameFile) {
   $("#myPanet3d").remove();
   if (server)
     changeMp3(
-      `https://github.com/ayoub198fillali/Planets/blob/master/MP3/${nameFile}.mp3`
+      `https://github.com/ayoub198fillali/Planets/blob/master/MP3/${nameFile}.mp3?raw=true`
     );
   else changeMp3(`../MP3/${nameFile}.mp3`);
 
@@ -76,7 +76,7 @@ export function init(nameFile) {
   let loader = new GLTFLoader();
   let cc;
   if (server)
-    cc = `https://github.com/ayoub198fillali/Planets/blob/master/3D/${nameFile}.glb`;
+    cc = `https://github.com/ayoub198fillali/Planets/blob/master/3D/${nameFile}.glb?raw=true`;
   else cc = `../3D/${nameFile}.glb`;
   loader.load(cc, function (gltf) {
     console.log("Start2");
