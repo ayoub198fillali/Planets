@@ -95,6 +95,6 @@ export function changeMp3(sourceUrl) {
   // audio[0].oncanplaythrough = audio[0].play();
   /****************/
 }
-$(window).on("load", function () {
-  changeMp3("../MP3/intro.mp3");
-});
+// $(window).on("load", function () {
+//   changeMp3("../MP3/intro.mp3");
+// });
