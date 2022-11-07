@@ -75,6 +75,7 @@ export function init(nameFile) {
 
   let loader = new GLTFLoader();
   let cc;
+
   if (server)
     cc = `https://raw.githubusercontent.com/ayoub198fillali/Planets/master/3D/${nameFile}.glb`;
   else cc = `../3D/${nameFile}.glb`;
