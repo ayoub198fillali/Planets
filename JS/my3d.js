@@ -1,4 +1,4 @@
-let server = true;
+let server = false;
 //
 let scene, camera, renderer;
 let hlight, directionalLight, light, light2, light3, light4, controls, Planet;
