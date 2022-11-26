@@ -1,4 +1,4 @@
-let server = true;
+let server = false;
 //
 let scene, camera, renderer;
 let hlight, directionalLight, light, light2, light3, light4, controls, Planet;
@@ -62,11 +62,6 @@ export function init(nameFile) {
 
   $(".planetsGrp :not([id = myPanet3d])").hide();
   $("#myPanet3d").remove();
-  if (server)
-    changeMp3(
-      `https://github.com/ayoub198fillali/Planets/blob/master/MP3/${nameFile}.mp3?raw=true`
-    );
-  else changeMp3(`../MP3/${nameFile}.mp3`);
 
   renderer.domElement.id = "myPanet3d";
   $(".planetsGrp")[0].appendChild(renderer.domElement);
@@ -77,6 +72,12 @@ export function init(nameFile) {
 }
 
 export function reloadPlanet(nameFile) {
+  if (server)
+    changeMp3(
+      `https://github.com/ayoub198fillali/Planets/blob/master/MP3/${nameFile}.mp3?raw=true`
+    );
+  else changeMp3(`../MP3/${nameFile}.mp3`);
+
   if (server)
     cc = `https://raw.githubusercontent.com/ayoub198fillali/Planets/master/3D/${nameFile}.glb`;
   else cc = `../3D/${nameFile}.glb`;
@@ -102,7 +103,9 @@ function animate() {
 export function changeMp3(sourceUrl) {
   let audio = $("#myControlerSound");
   $("#myControlerSound source").attr("src", sourceUrl);
+
   /****************/
+
   audio[0].pause();
   audio[0].load(); //suspends and restores all audio element
 

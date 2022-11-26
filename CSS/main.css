@@ -791,3 +791,11 @@ canvas {
   margin-top: 15px;
   height: 40px;
 }
+
+.textDescription {
+  margin: auto;
+  width: 320px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 12px;
+}

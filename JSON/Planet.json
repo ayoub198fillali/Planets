@@ -4,7 +4,8 @@
     "mass": "1.989e30 Kg",
     "Diameter": "1.3927e6 Km",
     "Volume": "1.409e18 Km3",
-    "Age": "4.66 billion years"
+    "Age": "4.66 billion years",
+    "description": "Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. <br /> The Sun is the largest object in our solar system. The Sun’s volume would need 1.3 million Earths to fill it. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The hottest part of the Sun is its core, where temperatures top 27 million degrees Fahrenheit (15 million degrees Celsius). The Sun’s activity, from its powerful eruptions to the steady stream of charged particles it sends out, influences the nature of space throughout the solar system. <br /> Even though the Sun is the center of our solar system and essential to our survival, it’s only an average star in terms of its size. Stars up to 100 times larger have been found. And many solar systems have more than one star. By studying our Sun, scientists can better understand the workings of distant stars. <br />"
   },
 
   {
@@ -17,7 +18,8 @@
     "Diameter": "4879.4 Km",
     "Volume": "6.083e10 Km3",
     "Age": "4.5 billion years",
-    "Planet type": "Terrestrial"
+    "Planet type": "Terrestrial",
+    "description": "Mercury was named after the Roman god of commerce. <br /> The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. <br /> Mercury's surface temperatures are both extremely hot and cold. Because the planet is so close to the Sun, day temperatures can reach highs of 800°F (430°C). Without an atmosphere to retain that heat at night, temperatures can dip as low as -290°F (-180°C). <br /> Mercury's environment is not conducive to life as we know it. The temperatures and solar radiation that characterize this planet are most likely too extreme for organisms to adapt to. <br />"
   },
 
   {
@@ -30,7 +32,8 @@
     "Diameter": "12100 Km",
     "Volume": "9.28415e11 Km3",
     "Age": "4.5 billion years",
-    "Planet type": "Terrestrial"
+    "Planet type": "Terrestrial",
+    "description": "It's a cloud-swaddled planet named for a love goddess, often called Earth’s twin. But pull up a bit closer, and Venus turns hellish. Our nearest planetary neighbor, the second planet from the Sun, has a surface hot enough to melt lead. <br /> Venus is a landscape of valleys and high mountains dotted with thousands of volcanoes. Its surface features – most named for both real and mythical women – include Ishtar Terra, a rocky, highland area around the size of Australia near the north pole, and an even larger, South-America-sized region called Aphrodite Terra that stretches across the equator. One mountain reaches 36,000 feet (11 kilometers), higher than Mt. Everest. Notably, except for Earth, Venus has by far the fewest impact craters of any rocky planet, revealing a young surface. <br />"
   },
 
   {
@@ -43,7 +46,8 @@
     "Diameter": "12742 Km",
     "Volume": "1.08321e12 Km3",
     "Age": "4.5 billion years",
-    "Planet type": "Terrestrial"
+    "Planet type": "Terrestrial",
+    "description": "Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things. While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal. <br /> The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.” <br /> Earth has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago. <br /> Earth is the only planet that has a single moon. Our Moon is the brightest and most familiar object in the night sky. In many ways, the Moon is responsible for making Earth such a great home. It stabilizes our planet's wobble, which has made the climate less variable over thousands of years. <br />"
   },
 
   {
@@ -52,7 +56,8 @@
     "Distance From Sun": 1,
     "Distance From Earth": 1,
     "Diameter": "12742 Km",
-    "Volume": "1.08321e12 Km3"
+    "Volume": "1.08321e12 Km3",
+    "description": ""
   },
 
   {
@@ -65,7 +70,8 @@
     "Diameter": "6779 Km",
     "Volume": "1.6318e11 Km3",
     "Age": "4.5 billion years",
-    "Planet type": "Terrestrial"
+    "Planet type": "Terrestrial",
+    "description": "Mars was named by the ancient Romans for their god of war because its reddish color was reminiscent of blood. Other civilizations also named the planet for this attribute – for example, the Egyptians called it 'Her Desher', meaning 'the red one'. Even today, it is frequently called the 'Red Planet' because iron minerals in the Martian dirt oxidize, or rust, causing the surface to look red. <br /> Scientists don't expect to find living things currently thriving on Mars. Instead, they're looking for signs of life that existed long ago, when Mars was warmer and covered with water. <br /> Mars has two small moons, Phobos and Deimos, that may be captured asteroids. They're potato-shaped because they have too little mass for gravity to make them spherical. <br />"
   },
 
   {
@@ -78,7 +84,8 @@
     "Diameter": "139820 Km",
     "Volume": "4.43128e15 Km3",
     "Age": "4.6 billion years",
-    "Planet type": "Gas Giant"
+    "Planet type": "Gas Giant",
+    "description": "Jupiter is the fifth planet from our Sun and is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined. Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years <br /> Jupiter is surrounded by dozens of moons. Jupiter also has several rings, but unlike the famous rings of Saturn, Jupiter’s rings are very faint and made of dust, not ice. <br /> Jupiter, being the biggest planet, gets its name from the king of the ancient Roman gods. <br /> Jupiter’s environment is probably not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to. <br /> With four large moons and many smaller moons, Jupiter forms a kind of miniature solar system. Jupiter has 80 moons. Fifty-seven moons have been given official names by the International Astronomical Union (IAU). Another 23 moons are awaiting names. <br />"
   },
 
   {
@@ -91,7 +98,8 @@
     "Diameter": "116460 Km",
     "Volume": "8.2716e13 Km3",
     "Age": "4.6 billion years",
-    "Planet type": "Gas Giant"
+    "Planet type": "Gas Giant",
+    "description": "Saturn is the sixth planet from the Sun and the second-largest planet in our solar system. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium. Saturn is not the only planet to have rings, but none are as spectacular or as complex as Saturn's. Saturn also has dozens of moons. <br /> From the jets of water that spray from Saturn's moon Enceladus to the methane lakes on smoggy Titan, the Saturn system is a rich source of scientific discovery and still holds many mysteries. <br /> The farthest planet from Earth discovered by the unaided human eye, Saturn has been known since ancient times. The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter. <br /> Saturn's environment is not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to. <br /> While planet Saturn is an unlikely place for living things to take hold, the same is not true of some of its many moons. Satellites like Enceladus and Titan, home to internal oceans, could possibly support life. <br /> Saturn is home to a vast array of intriguing and unique worlds. From the haze-shrouded surface of Titan to crater-riddled Phoebe, each of Saturn's moons tells another piece of the story surrounding the Saturn system. Currently, Saturn has 53 confirmed moons with 29 additional provisional moons awaiting confirmation. <br />"
   },
 
   {
@@ -104,7 +112,8 @@
     "Diameter": "50724 Km",
     "Volume": "6.833e13 Km3",
     "Age": "4.6 billion years",
-    "Planet type": "Gas Giant"
+    "Planet type": "Gas Giant",
+    "description": "The seventh planet from the Sun with the third largest diameter in our solar system, Uranus is very cold and windy. The ice giant is surrounded by 13 faint rings and 27 small moons as it rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin sideways, orbiting the Sun like a rolling ball. <br /> The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, he tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead, the planet was named for Uranus, the Greek god of the sky, as suggested by Johann Bode. <br /> Uranus' environment is not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to. <br /> Uranus has 27 known moons. While most of the satellites orbiting other planets take their names from Greek or Roman mythology, Uranus' moons are unique in being named for characters from the works of William Shakespeare and Alexander Pope. <br />"
   },
 
   {
@@ -117,6 +126,12 @@
     "Diameter": "49244 Km",
     "Volume": "6.254e13 Km3",
     "Age": "4.6 billion years",
-    "Planet type": "Gas Giant"
+    "Planet type": "Gas Giant",
+    "description": "Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye. <br /> Neptune is so far from the Sun that high noon on the big blue planet would seem like dim twilight to us. The warm light we see here on our home planet is roughly 900 times as bright as sunlight on Neptune. <br /> Neptune's environment is not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to. <br /> The ice giant Neptune was the first planet located through mathematical calculations. Using predictions made by Urbain Le Verrier, Johann Galle discovered the planet in 1846. The planet is named after the Roman god of the sea, as suggested by Le Verrier. <br /> Neptune has 14 known moons. Neptune's largest moon Triton was discovered on October 10, 1846, by William Lassell, just 17 days after Johann Gottfried Galle discovered the planet. Since Neptune was named for the Roman god of the sea, its moons are named for various lesser sea gods and nymphs in Greek mythology. <br />"
+  },
+
+  {
+    "Name": "Asteroid Belt",
+    "description": ""
   }
 ]

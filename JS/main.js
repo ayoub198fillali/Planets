@@ -36,11 +36,14 @@ $("#backButton").on("click", function () {
   changeMp3(
     `https://github.com/ayoub198fillali/Planets/blob/master/MP3/intro.mp3?raw=true`
   );
+
+  $(".textDescription").html("");
 });
 
 /////////////////////////////////////////////////////////
 ////////////////////DATA FROM SERVER/////////////////////
 /////////////////////////////////////////////////////////
+let description = {};
 // Get Data From Server
 async function fetchData() {
   console.log("Start Fetch");
@@ -55,18 +58,23 @@ async function fetchData() {
     for (const element of jsData) {
       let myStrCode = `<div class="boxDict">`;
       for (let key in element) {
-        myStrCode += ` <label for="${
-          element.Name.toLowerCase() + "_" + key
-        }">${key}</label>
+        if (key != "description") {
+          myStrCode += ` <label for="${
+            element.Name.toLowerCase() + "_" + key
+          }">${key}</label>
         <input type="text" name="${
           element.Name.toLowerCase() + "_" + key
         }" readonly value="${element[key]}" />
         `;
+        } else {
+          description[element.Name] = element[key];
+        }
       }
       myStrCode += `</div>`;
 
       $("#cadre_" + element.Name.toLowerCase()).append(myStrCode);
     }
+    // console.log(description);
   } catch (reason) {
     console.log(`Reason: ${reason}`);
   } finally {
@@ -86,4 +94,6 @@ function changeBodyTo(name) {
   console.log(`3D => ${name}`);
   if ($("#myPanet3d").length == 0) init(name);
   else reloadPlanet(name);
+
+  $(".textDescription").html(description[name]);
 }
