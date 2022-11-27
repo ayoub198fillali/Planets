@@ -22,6 +22,7 @@
     <!-- -------------------------------------------------------------------- -->
     <!-- ----------------------------bigTitle-------------------------------- -->
     <!-- -------------------------------------------------------------------- -->
+    <div id="backButton"></div>
 
     <section>
       <header class="clearfix">
@@ -36,133 +37,155 @@
         </p>
       </header>
     </section>
-    <div id="backButton"></div>
-    <!-- -------------------------------------------------------------------- -->
-    <!-- ---------------------------planetButton----------------------------- -->
-    <!-- -------------------------------------------------------------------- -->
-    <!-- SOLEIL -->
-    <div id="info_soleil" class="planetButton">Sun</div>
-    <!-- MERCURE -->
-    <div id="info_mercure" class="planetButton">Mercury</div>
-    <!-- VENUS -->
-    <div id="info_venus" class="planetButton">Venus</div>
-    <!-- TERRE -->
-    <div id="info_terre" class="planetButton">Earth</div>
-    <!-- LUNE -->
-    <div id="info_lune" class="planetButton">Moon</div>
-    <!-- MARS -->
-    <div id="info_mars" class="planetButton">Mars</div>
-    <!-- Ceinture d'astéroïdes -->
-    <div id="info_ceinture_asteroides" class="planetButton">Asteroid Belt</div>
-    <!-- JUPITER -->
-    <div id="info_jupiter" class="planetButton">Jupiter</div>
-    <!-- SATURNE -->
-    <div id="info_saturne" class="planetButton">Saturn</div>
-    <!-- URANUS -->
-    <div id="info_uranus" class="planetButton">Uranus</div>
-    <!-- NEPTUNE -->
-    <div id="info_neptune" class="planetButton">Neptune</div>
-
-    <!-- -------------------------------------------------------------------- -->
-    <!-- ------------------------------Cadre--------------------------------- -->
-    <!-- -------------------------------------------------------------------- -->
-    <!-- SOLEIL -->
-    <div id="cadre_sun"></div>
-    <!-- MERCURE -->
-    <div id="cadre_mercury"></div>
-    <!-- VENUS -->
-    <div id="cadre_venus"></div>
-    <!-- TERRE -->
-    <div id="cadre_earth"></div>
-    <!-- LUNE -->
-    <div id="cadre_moon"></div>
-    <!-- MARS -->
-    <div id="cadre_mars"></div>
-    <!-- JUPITER -->
-    <div id="cadre_jupiter"></div>
-    <!-- SATURNE -->
-    <div id="cadre_saturn"></div>
-    <!-- URANUS -->
-    <div id="cadre_uranus"></div>
-    <!-- NEPTUNE -->
-    <div id="cadre_neptune"></div>
-
-    <!-- -------------------------------------------------------------------- -->
-    <!-- -----------------------------planetsGrp----------------------------- -->
-    <!-- -------------------------------------------------------------------- -->
-    <!-- Positionnement des astres du système solaire  -->
-    <div class="planetsGrp">
-      <div id="soleil" class="thePlanet"></div>
-
-      <div id="mercure" class="orbite">
-        <div id="planete_mercure" class="thePlanet"></div>
+    <div id="body1">
+      <!-- -------------------------------------------------------------------- -->
+      <!-- ---------------------------planetButton----------------------------- -->
+      <!-- -------------------------------------------------------------------- -->
+      <!-- SOLEIL -->
+      <div id="info_soleil" class="planetButton">Sun</div>
+      <!-- MERCURE -->
+      <div id="info_mercure" class="planetButton">Mercury</div>
+      <!-- VENUS -->
+      <div id="info_venus" class="planetButton">Venus</div>
+      <!-- TERRE -->
+      <div id="info_terre" class="planetButton">Earth</div>
+      <!-- LUNE -->
+      <div id="info_lune" class="planetButton">Moon</div>
+      <!-- MARS -->
+      <div id="info_mars" class="planetButton">Mars</div>
+      <!-- Ceinture d'astéroïdes -->
+      <div id="info_ceinture_asteroides" class="planetButton">
+        Asteroid Belt
       </div>
-
-      <div id="venus" class="orbite">
-        <div id="planete_venus" class="thePlanet"></div>
-      </div>
-
-      <div id="terre" class="orbite">
-        <div id="planete_terre" class="thePlanet">
-          <div id="lune" class="orbite">
-            <div id="astre_lune" class="thePlanet"></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="mars" class="orbite">
-        <div id="planete_mars" class="thePlanet"></div>
-      </div>
-
-      <div id="ceinture_asteroides"></div>
-      <div id="ceinture_asteroides1"></div>
-
-      <div id="jupiter" class="orbite">
-        <div id="planete_jupiter" class="thePlanet"></div>
-      </div>
-
-      <div id="saturne" class="orbite">
-        <div id="planete_saturne">
-          <div id="anneau_saturne" class="thePlanet"></div>
-        </div>
-      </div>
-
-      <div id="uranus" class="orbite">
-        <div id="planete_uranus">
-          <div id="anneau_uranus" class="thePlanet"></div>
-        </div>
-      </div>
-
-      <div id="neptune" class="orbite">
-        <div id="planete_neptune" class="thePlanet"></div>
-      </div>
+      <!-- JUPITER -->
+      <div id="info_jupiter" class="planetButton">Jupiter</div>
+      <!-- SATURNE -->
+      <div id="info_saturne" class="planetButton">Saturn</div>
+      <!-- URANUS -->
+      <div id="info_uranus" class="planetButton">Uranus</div>
+      <!-- NEPTUNE -->
+      <div id="info_neptune" class="planetButton">Neptune</div>
 
       <!-- -------------------------------------------------------------------- -->
+      <!-- ------------------------------Cadre--------------------------------- -->
+      <!-- -------------------------------------------------------------------- -->
+      <!-- SOLEIL -->
+      <div id="cadre_sun"></div>
+      <!-- MERCURE -->
+      <div id="cadre_mercury"></div>
+      <!-- VENUS -->
+      <div id="cadre_venus"></div>
+      <!-- TERRE -->
+      <div id="cadre_earth"></div>
+      <!-- LUNE -->
+      <div id="cadre_moon"></div>
+      <!-- MARS -->
+      <div id="cadre_mars"></div>
+      <!-- JUPITER -->
+      <div id="cadre_jupiter"></div>
+      <!-- SATURNE -->
+      <div id="cadre_saturn"></div>
+      <!-- URANUS -->
+      <div id="cadre_uranus"></div>
+      <!-- NEPTUNE -->
+      <div id="cadre_neptune"></div>
+
+      <!-- -------------------------------------------------------------------- -->
+      <!-- -----------------------------planetsGrp----------------------------- -->
+      <!-- -------------------------------------------------------------------- -->
+      <!-- Positionnement des astres du système solaire  -->
+      <div class="planetsGrp">
+        <div id="soleil" class="thePlanet"></div>
+
+        <div id="mercure" class="orbite">
+          <div id="planete_mercure" class="thePlanet"></div>
+        </div>
+
+        <div id="venus" class="orbite">
+          <div id="planete_venus" class="thePlanet"></div>
+        </div>
+
+        <div id="terre" class="orbite">
+          <div id="planete_terre" class="thePlanet">
+            <div id="lune" class="orbite">
+              <div id="astre_lune" class="thePlanet"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mars" class="orbite">
+          <div id="planete_mars" class="thePlanet"></div>
+        </div>
+
+        <div id="ceinture_asteroides"></div>
+        <div id="ceinture_asteroides1"></div>
+
+        <div id="jupiter" class="orbite">
+          <div id="planete_jupiter" class="thePlanet"></div>
+        </div>
+
+        <div id="saturne" class="orbite">
+          <div id="planete_saturne">
+            <div id="anneau_saturne" class="thePlanet"></div>
+          </div>
+        </div>
+
+        <div id="uranus" class="orbite">
+          <div id="planete_uranus">
+            <div id="anneau_uranus" class="thePlanet"></div>
+          </div>
+        </div>
+
+        <div id="neptune" class="orbite">
+          <div id="planete_neptune" class="thePlanet"></div>
+        </div>
+
+        <!-- -------------------------------------------------------------------- -->
+      </div>
+      <audio
+        id="myControlerSound"
+        controls
+        controlsList="nodownload"
+        preload="none"
+      >
+        <source src="MP3/intro.mp3" type="audio/mpeg" />
+      </audio>
+
+      <div class="textDescription"></div>
+
+      <!-- -------------------------------------------------------------------- -->
+      <!-- ----------------------------footer---------------------------------- -->
+      <!-- -------------------------------------------------------------------- -->
+      <!-- <a class="about" href="">About this experiment →</a >-->
+      <a id="quiz" class="twitter" href="">Quiz →</a>
+      <div style="height: 10px"></div>
+      <footer>
+        <div class="Copyright">Copyright ©️ 2022 A²HF</div>
+      </footer>
     </div>
-    <audio
-      id="myControlerSound"
-      controls
-      controlsList="nodownload"
-      preload="none"
-    >
-      <source src="MP3/intro.mp3" type="audio/mpeg" />
-    </audio>
-
-    <div class="textDescription"></div>
-
-    <!-- -------------------------------------------------------------------- -->
-    <!-- ----------------------------footer---------------------------------- -->
-    <!-- -------------------------------------------------------------------- -->
-    <a class="about" href="">About this experiment →</a
-    ><a class="twitter" href="">On Twitter →</a>
-    <div style="height: 10px"></div>
-    <footer>
-      <div class="Copyright">Copyright ©️ 2022 A²HF</div>
-    </footer>
-
+    <div class="body2">
+      <div class="container">
+        <div id="question-container" class="hide">
+          <div id="question">Question</div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+          <div id="result"></div>
+        </div>
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn">Start</button>
+          <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+      </div>
+      <div class="questNum"></div>
+    </div>
     <!-- ------------------------------JS------------------------------------ -->
     <!-- -------------------------------------------------------------------- -->
     <script src="JS/Jquery.min.js"></script>
     <script type="module" src="JS/main.js"></script>
+    <script defer src="JS/script.js"></script>
   </body>
 </html>

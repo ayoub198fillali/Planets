@@ -34,6 +34,10 @@ body {
   --wUranus: calc(450px * var(--coef));
 
   --planete_: calc(10px * var(--coef));
+
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
 }
 
 /* Smallest */
@@ -731,10 +735,10 @@ a.twitter {
 }
 
 @media only screen and (max-device-width: 1024px) {
-  a.about,
+  /* a.about,
   a.twitter {
     visibility: hidden;
-  }
+  } */
 }
 /* ************************ Fin footer ************************** */
 
@@ -795,7 +799,108 @@ canvas {
 .textDescription {
   margin: auto;
   width: 320px;
-  padding: 30px;
+  padding: 20px;
   text-align: justify;
   font-size: 12px;
+}
+
+/* 
+ */
+
+.body2 {
+  /* display: none !important; */
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: hsl(var(--hue), 100%, 15%); */
+}
+/*
+.body2.correct {
+  --hue: var(--hue-correct);
+}
+
+.body2.wrong {
+  --hue: var(--hue-wrong);
+} */
+.questNum {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eadb6c;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+#question {
+  color: #a12345;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#result {
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a12345;
 }

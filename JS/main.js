@@ -31,6 +31,9 @@ $(".planetButton").on("click", function () {
 
 import { init, reloadPlanet, changeMp3 } from "./my3d.js";
 $("#backButton").on("click", function () {
+  $("#body1").show();
+  $(".body2").hide();
+
   $("#myPanet3d").remove();
   $(".planetsGrp :not([id = myPanet3d])").show();
   changeMp3(
@@ -97,3 +100,11 @@ function changeBodyTo(name) {
 
   $(".textDescription").html(description[name]);
 }
+
+$("#quiz").on("click", function (event) {
+  event.preventDefault();
+  $(".body2").show();
+  $("#body1").hide();
+  $("#backButton").show("slow");
+});
+$(".body2").hide();
