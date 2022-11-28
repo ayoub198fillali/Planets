@@ -94,6 +94,7 @@ fetchData();
 
 // GOTO Planet
 function changeBodyTo(name) {
+  name = name.trim();
   console.log(`3D => ${name}`);
   if ($("#myPanet3d").length == 0) init(name);
   else reloadPlanet(name);

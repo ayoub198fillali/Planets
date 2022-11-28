@@ -88,10 +88,9 @@ function clearStatusClass(element) {
   element.classList.remove("correct");
   element.classList.remove("wrong");
 }
-
 const questions = [
   {
-    question: "what is the smallest planet in solar system?",
+    question: "what is the smallest planet in our solar system?",
     answers: [
       { text: "Mercury", correct: true },
       { text: "Mars", correct: false },
@@ -100,14 +99,14 @@ const questions = [
     ],
   },
   {
-    question: " A day on Venus is ...",
+    question: "How long does a day in venus last ?",
     answers: [
       { text: "longer than a year", correct: true },
       { text: "80 days", correct: false },
     ],
   },
   {
-    question: "Where is the highest mountain in the solar system?",
+    question: "What planet in the solar system has the highest mountain?",
     answers: [
       { text: "Earth", correct: false },
       { text: "Mars", correct: true },
@@ -123,14 +122,14 @@ const questions = [
     ],
   },
   {
-    question: "Which planet has the coldest climate in the solar system?",
+    question: "What planet in the solar system has the coldest climate?",
     answers: [
       { text: "Uranus", correct: true },
       { text: "Venus", correct: false },
     ],
   },
   {
-    question: "Which solar system object is the brightest ?",
+    question: "What is the most shining object in the solar system ?",
     answers: [
       { text: "Moon", correct: true },
       { text: "Uranus", correct: false },
@@ -150,8 +149,8 @@ const questions = [
   {
     question: "Which planet has the fastest rotation? ",
     answers: [
-      { text: "Jupiter", correct: false },
-      { text: "Venus", correct: true },
+      { text: "Jupiter", correct: true },
+      { text: "Venus", correct: false },
       { text: "Uranus", correct: false },
       { text: "Neptune", correct: false },
     ],
@@ -166,7 +165,7 @@ const questions = [
     ],
   },
   {
-    question: "Which is the second smallest planet within our solar system? ",
+    question: "What is the closest planet to the sun in our solar system ? ",
     answers: [
       { text: "Venus", correct: false },
       { text: "Earth", correct: false },
