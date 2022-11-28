@@ -714,12 +714,11 @@ footer .Copyright {
 }
 
 /* ******* */
-a.about,
+a.video,
 a.twitter {
   display: block;
   position: fixed;
   bottom: 10px;
-  right: 20px;
   background: #32312b;
   padding: 7px 28px;
   text-decoration: none;
@@ -732,6 +731,13 @@ a.twitter {
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
+}
+a.twitter {
+  right: 20px;
+}
+
+a.video {
+  left: 20px !important;
 }
 
 @media only screen and (max-device-width: 1024px) {
